@@ -6,7 +6,7 @@ function init() {
 
 function enable() {
   let calendarSettings = new Gio.Settings({ schema: 'org.gnome.desktop.default-applications.office.calendar' });
-  calendarSettings.set_string('exec', 'google-chrome https://www.google.com/calendar');
+  calendarSettings.set_string('exec', '/usr/bin/x-www-browser https://www.google.com/calendar');
   calendarSettings.set_boolean('needs-term', false);
 }
 
